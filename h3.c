@@ -31,7 +31,7 @@ of their current position */
 int
 binarySearch (int nums[], int size, int searchVal)
 {
-	int l = 0, r = size - 1;
+	int l = 0, r = size;
 
 	while (l <= r)
 		{
