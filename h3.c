@@ -70,9 +70,9 @@ main ()
 	int x = 0;
 	int w;
 	insertionSort (nums, n);
-	    for(w=0; w<n; i++)
+	    for(w=0; w<n; i++){
         printf("%d ",nums[w]);
-         
+	    }
     printf("\n");
 	printf ("Enter a positive integer or -1 to quit: \n");
 	scanf ("%d", &x);
