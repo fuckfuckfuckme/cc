@@ -68,18 +68,14 @@ main ()
 			scanf ("%d", &nums[i]);
 		}
 	int x = 0;
-	int w;
 	insertionSort (nums, n);
-	    for(w=0; w<n; i++){
-        printf("%d ",nums[w]);
-	    }
     printf("\n");
 	printf ("Enter a positive integer or -1 to quit: \n");
 	scanf ("%d", &x);
 	do
 		{
 			int ind = binarySearch (nums, n, x);
-			if (ind > 0)
+			if (ind >= 0)
 	{
 	  printf ("Found\n");
 	}
