@@ -71,7 +71,7 @@ main ()
 	int w;
 	insertionSort (nums, n);
 	    for(w=0; w<n; i++)
-        printf("%d ",arr[w]);
+        printf("%d ",nums[w]);
          
     printf("\n");
 	printf ("Enter a positive integer or -1 to quit: \n");
