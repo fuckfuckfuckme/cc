@@ -71,8 +71,8 @@ main ()
 	printf ("Enter a positive integer or -1 to quit: \n");
 	scanf ("%d", &check);
 	do{
-		int ind = binarySearch (nums, n, check);
-		if (ind >= 0)
+		int var = binarySearch (nums, n, check);
+		if (var >= 0)
 	{
 	  printf ("Found\n");
 	}
