@@ -11,7 +11,7 @@ void
 insertionSort (int nums[], int size)
 {
 	int i, key, j;
-	for (i = 0; i < size; i++)
+	for (i = 1; i < size; i++)
 		{
 			key = nums[i];
 			j = i - 1;
