@@ -24,7 +24,7 @@ int main(int argc, const char * argv[]){
 
 	removeSorted(x,11);
 	removeSorted(x,7);
-	insertSorted(x,6);
+	insertSorted(x,3);
 
 	printList(x);
 
