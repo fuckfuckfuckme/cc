@@ -12,7 +12,7 @@ int main(int argc, const char * argv[]){
 	insertSorted(x,2);
 	insertSorted(x,1);
 	insertSorted(x,19);
-	insertSorted(x,4;
+	insertSorted(x,4);
 
 	printList(x);
 
