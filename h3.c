@@ -68,7 +68,12 @@ main ()
 			scanf ("%d", &nums[i]);
 		}
 	int x = 0;
+	int w;
 	insertionSort (nums, n);
+	    for(w=0; w<n; i++)
+        printf("%d ",arr[w]);
+         
+    printf("\n");
 	printf ("Enter a positive integer or -1 to quit: \n");
 	scanf ("%d", &x);
 	do
