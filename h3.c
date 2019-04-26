@@ -11,7 +11,7 @@ void
 insertionSort (int nums[], int size)
 {
 	int i, key, j;
-	for (i = 1; i < size; i++)
+	for (i = 0; i < size; i++)
 		{
 			key = nums[i];
 			j = i - 1;
@@ -31,7 +31,7 @@ of their current position */
 int
 binarySearch (int nums[], int size, int searchVal)
 {
-	int l = 0, r = size;
+	int l = 0, r = size-1;
 
 	while (l <= r)
 		{
