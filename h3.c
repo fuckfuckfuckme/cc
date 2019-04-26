@@ -33,26 +33,24 @@ binarySearch (int nums[], int size, int searchVal)
 {
 	int l = 0, r = size-1;
 
-	while (l <= r)
-		{
-			int m = l + (r - l) / 2;
+while (l <= r){
+int num = l + (r - l) / 2;
 
-// Check if x is present at mid
-			if (nums[m] == searchVal)
-	return m;
+// Check if x is at mid
+	if (nums[num] == searchVal)
+	return num;
 
-// If x greater, ignore left half
-			if (nums[m] < searchVal)
-	l = m + 1;
+// If x larger, ignore left half
+	if (nums[num] < searchVal)
+	l = num + 1;
 
 // If x is smaller, ignore right half
-			else
-	r = m - 1;
-		}
+	else
+	r = num - 1;
+}
 
-// if we reach here, then element was
-// not present
-	return -1;
+// element was not present
+return -1;
 }
 
 int
@@ -67,27 +65,24 @@ main ()
 		{
 			scanf ("%d", &nums[i]);
 		}
-	int x = 0;
+	int check = 0;
 	insertionSort (nums, n);
     printf("\n");
 	printf ("Enter a positive integer or -1 to quit: \n");
-	scanf ("%d", &x);
-	do
-		{
-			int ind = binarySearch (nums, n, x);
-			if (ind >= 0)
+	scanf ("%d", &check);
+	do{
+		int ind = binarySearch (nums, n, check);
+		if (ind >= 0)
 	{
 	  printf ("Found\n");
 	}
-			else
-	{
+	else{
 	  printf ("Not Found\n");
-
-	}
+}
 			printf ("Enter a positive integer or -1 to quit: \n");
-			scanf ("%d", &x);
+			scanf ("%d", &check);
 		}
-	while (x != -1);
+	while (check != -1);
 
 	return 0;
 }
