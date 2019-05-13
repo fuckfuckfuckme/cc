@@ -2,6 +2,14 @@
 #include<string.h>
 Name narr[1000];
 DOB darr[1000];
+SortedLists * createSortedLists(){
+   	struct SortedLists * list;
+	list = (struct SortedLists  *) malloc(sizeof(struct SortedLists));
+	list->headNames = NULL;
+   list->headDOBs = NULL;
+	return list;
+
+}
 
 
 int ageHelp(DOB d1, DOB d2)
