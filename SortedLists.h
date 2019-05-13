@@ -54,4 +54,4 @@ void printOrderedDOBs(struct SortedLists *aList);
 void destroySortedList(struct SortedLists *aList);
 //PRE: aList has been created
 //free space created for aList
-void deleteHalf();
+// void deleteHalf();
