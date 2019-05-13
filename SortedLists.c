@@ -4,7 +4,7 @@ Name narr[1000];
 DOB darr[1000];
 
 
-int isage(DOB d1, DOB d2)
+int ageHelp(DOB d1, DOB d2)
 {
    if (d1.year > d2.year)
        return 1;
@@ -59,7 +59,7 @@ void insertSorted(struct SortedLists *aList, Name n, DOB d)
    {
        while (headdob)
        {
-           if (isage(headdob->dob, d))
+           if (ageHelp(headdob->dob, d))
            {
                if (headdob == aList->headDOBs)
                {
