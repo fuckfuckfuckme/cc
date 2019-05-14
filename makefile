@@ -11,7 +11,7 @@ all: sortedlists
 # Main shell program
 #
 sortedlists: sortedlists.c sortedlists.h 
-	$(CC) -o sortedlists sortedlists.c  $(CFLAGS)
+	$(CC) -o sortedlists $(CFLAGS) sortedlists.c
 
 
 #
