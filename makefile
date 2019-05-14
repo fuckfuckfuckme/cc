@@ -6,4 +6,4 @@ OBJ = TestDrivers.o SortedLists.o
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 sortedlistmake: $(OBJ)
-	$(CC) -o $@ $^ $(CFLAGS
+	$(CC) -o $@ $^ $(CFLAGS)
