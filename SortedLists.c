@@ -1,5 +1,7 @@
 #include "SortedLists.h"
 #include<string.h>
+#include <stdio.h>
+#include <stdlib.h>
 Name narr[1000];
 DOB darr[1000];
 SortedLists * createSortedLists(){
