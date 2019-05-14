@@ -1,4 +1,4 @@
-#include "Sortedlists.h"
+#include "SortedLists.h"
 #include<string.h>
 Name narr[1000];
 DOB darr[1000];
