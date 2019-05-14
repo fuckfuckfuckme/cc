@@ -4,12 +4,14 @@
 #include <stdlib.h>
 Name narr[1000];
 DOB darr[1000];
+
 SortedLists * createSortedLists(){
- SortedLists *result = malloc(sizeof(SortedLists));
-	return result;
+   	SortedLists *list = malloc(sizeof(SortedLists));
+	list->headNames = NULL;
+   	list->headDOBs = NULL;
+	return list;
 
 }
-
 
 int ageHelp(DOB d1, DOB d2)
 {
