@@ -5,18 +5,18 @@ CFLAGS=-Wall -g
 # List all of the binary programs you want to build here
 # Separate each program with a single space
 #
-all: sortedlists
+all: SortedLists.c
 
 #
 # Main shell program
 #
-sortedlists: sortedlists.c sortedlists.h 
-	$(CC) -o sortedlists $(CFLAGS) sortedlists.c
+sortedlists: SortedLists.c SortedLists.h 
+	$(CC) -o SortedLists SortedLists.c $(CFLAGS)
 
 
 #
 # Cleanup the files that we have created
 #
 clean:
-	$(RM) sortedlists *.o
+	$(RM) SortedLists *.o
 	$(RM) -rf *.dSYM
