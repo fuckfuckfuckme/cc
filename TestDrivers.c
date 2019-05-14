@@ -139,12 +139,12 @@ void deleteHalfOfOne(int i) {  //uses the data array in order
     }
 }
 
-// void deleteHalf() {
-//     int i;
-//     for (i = 0; i < NUMLISTS; i++) {
-//         deleteHalfOfOne(i);
-//     }
-// }
+void deleteHalf() {
+    int i;
+    for (i = 0; i < NUMLISTS; i++) {
+        deleteHalfOfOne(i);
+    }
+}
 
 void printDOBs(Name n, DOB d[]) {
     int i = 0;;
