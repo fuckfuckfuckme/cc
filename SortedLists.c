@@ -7,8 +7,7 @@ DOB darr[1000];
 
 SortedLists * createSortedLists(){
    	SortedLists *list = malloc(sizeof(SortedLists));
-	list->headNames = NULL;
-   	list->headDOBs = NULL;
+
 	return list;
 
 }
