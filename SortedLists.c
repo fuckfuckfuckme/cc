@@ -5,11 +5,8 @@
 Name narr[1000];
 DOB darr[1000];
 SortedLists * createSortedLists(){
-   	struct SortedLists * list;
-	list = (struct SortedLists  *) malloc(sizeof(struct SortedLists));
-	list->headNames = NULL;
-   list->headDOBs = NULL;
-	return list;
+ SortedLists *result = malloc(sizeof(SortedLists));
+	return result;
 
 }
 
