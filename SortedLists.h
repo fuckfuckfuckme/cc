@@ -35,7 +35,7 @@ DOB* findDOBs(struct SortedLists *aList, Name n);
 //PRE: aList has been created and is sorted
 //return an array of DOBs for each name that matches n
 //the last element in the array has a DOB with a values of year, month and day of 0, 0 and 0
-respectively.
+//respectively.
 Name* findNames(struct SortedLists *aList, DOB d);
 //PRE: aList has been created and is sorted
 //return an array of Names for each DOB that matches d
@@ -54,4 +54,4 @@ void printOrderedDOBs(struct SortedLists *aList);
 void destroySortedList(struct SortedLists *aList);
 //PRE: aList has been created
 //free space created for aList
-// void deleteHalf();
+
